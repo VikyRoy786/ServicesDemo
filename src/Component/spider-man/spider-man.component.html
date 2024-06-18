@@ -1,0 +1,6 @@
+<ul>
+    @for (item of missions; track missions.id) {
+        <li>{{item.id + " "+ item.missionDesc+" "+item.task }}&nbsp; <button class ="bi bi-trash" (click)="remove($index)"></button></li>
+      
+    }
+</ul>
